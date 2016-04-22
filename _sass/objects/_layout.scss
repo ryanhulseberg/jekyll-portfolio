@@ -55,11 +55,11 @@
       }
     }
 
-    .menu-icon {
+    &--icon {
         display: none;
     }
 
-    .link {
+    &--link {
         color: rgba(255, 255, 255, 0.4);
         line-height: $base-line-height;
 
@@ -70,15 +70,11 @@
     }
 
     @include media-query($on-palm) {
-        position: absolute;
-        top: 9px;
         right: $spacing-unit / 2;
         background-color: $background-color;
-        border: 1px solid $grey-color-light;
-        border-radius: 5px;
         text-align: right;
 
-        .menu-icon {
+        &--icon {
             display: block;
             float: right;
             width: 36px;
@@ -97,17 +93,17 @@
             }
         }
 
-        .trigger {
+        &--trigger {
             clear: both;
             display: none;
         }
 
-        &:hover .trigger {
+        &:hover &--trigger {
             display: block;
             padding-bottom: 5px;
         }
 
-        .link {
+        &--link {
             display: block;
             padding: 5px 10px;
 
